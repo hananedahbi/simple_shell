@@ -10,7 +10,13 @@ int _exe(char **command, char **argv)
     if (execve(command[0],command,) == -1)
     {
       perror(argv[0]);
-      free
+      freearg(command);    
     }
   }
+  else
+  {
+    waitpid(child, &status, 0);
+    freearg(command);
+  }
+  return (WEXITSTATUS(status));
 }
