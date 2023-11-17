@@ -10,7 +10,8 @@ int _exe(char **command, char **argv)
     if (execve(command[0],command,) == -1)
     {
       perror(argv[0]);
-      freearg(command);    
+      freearg(command);
+      exit(0);
     }
   }
   else
