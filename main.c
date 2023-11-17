@@ -21,7 +21,7 @@ int main(int ac, char **argv)
     	continue;
     
     
-    status = _execute(command, argv);
+    status = _exe(command, argv);
     
     
   }    
