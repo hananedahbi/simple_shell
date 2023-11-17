@@ -7,6 +7,10 @@ int _exe(char **command, char **argv)
   child = fork();
   if (child == 0)
   {
-    if (execve(command[0],command,))
+    if (execve(command[0],command,) == -1)
+    {
+      perror(argv[0]);
+      free
+    }
   }
 }
