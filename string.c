@@ -1,6 +1,6 @@
 #include "shell.h"
 
-char *_strdup(const char *str);
+char *_strdup(const char *str)
 {
 char *ptr;
 int i, len = 0;
@@ -19,7 +19,7 @@ for(i = 0; i <= len; i++)
 	ptr[i] = str[i];
     return (ptr);
 }
-int _strcmp(char *s1, char *s2);
+int _strcmp(char *s1, char *s2)
 {
 int cmp;
 cmp = (int)*s1 - (int)*s2;
@@ -34,7 +34,7 @@ if (*s1 != *s2)
 	return (cmp);
 }
 
-int strlen(char *s);
+int strlen(char *s)
 {
 int len = 0;
 
@@ -43,7 +43,7 @@ while (s[len])
     return (len);
 }
 
-char *_strcat(char *dest, char *src);
+char *_strcat(char *dest, char *src)
 {
 char *p = dest;
 
@@ -57,7 +57,7 @@ while(*src)
 return (dest);
 }
 
-char *_strcpy(char *dest, char *src);
+char *_strcpy(char *dest, char *src)
 {
 	int i = 0;
     
