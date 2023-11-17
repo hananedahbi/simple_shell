@@ -3,6 +3,7 @@
 void arg(char **dut)
 {
   int i;
+  if (!dut)
   return;
 for(i = 0; dut[i]; i++)
 {
