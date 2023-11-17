@@ -1,6 +1,6 @@
 #include "shell.h"
 
-void arg(char **dut)
+void freearg(char **dut)
 {
   int i;
   if (!dut)
