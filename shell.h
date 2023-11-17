@@ -11,6 +11,7 @@
 #include <fcntl.h>
 
 #define DELIM "\t\n"
+extern char **environ;
 
 char *read_line(void);
 char **tokenizer(char *line);
